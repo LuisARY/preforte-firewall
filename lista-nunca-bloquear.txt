@@ -1,33 +1,9 @@
-# ==============================================
-# SERVICIOS CRÍTICOS - NUNCA BLOQUEAR
-# Resuelven a IP REAL, NO 127.0.0.1
-# ==============================================
-
-# GOOGLE WORKSPACE
-/ip dns static add name=accounts.google.com address=142.250.185.78 comment="auto-neverblock"
-/ip dns static add name=mail.google.com address=142.251.32.110 comment="auto-neverblock"
-/ip dns static add name=drive.google.com address=142.251.32.110 comment="auto-neverblock"
-/ip dns static add name=docs.google.com address=142.251.32.110 comment="auto-neverblock"
-/ip dns static add name=meet.google.com address=142.250.185.78 comment="auto-neverblock"
-/ip dns static add name=google.com address=142.250.185.78 comment="auto-neverblock"
-
-# MICROSOFT 365
-/ip dns static add name=login.microsoftonline.com address=40.126.0.0 comment="auto-neverblock"
-/ip dns static add name=outlook.office365.com address=40.101.128.0 comment="auto-neverblock"
-/ip dns static add name=office.com address=40.112.72.0 comment="auto-neverblock"
-/ip dns static add name=teams.microsoft.com address=52.114.128.0 comment="auto-neverblock"
-
-# CORREO Y HERRAMIENTAS
-/ip dns static add name=preforte.com.bo address=8.8.8.8 comment="auto-neverblock"
-/ip dns static add name=mail.preforte.com.bo address=8.8.8.8 comment="auto-neverblock"
-/ip dns static add name=appsheet.com address=8.8.8.8 comment="auto-neverblock"
-/ip dns static add name=app.loop4.io address=8.8.8.8 comment="auto-neverblock"
-/ip dns static add name=rastreo.monnet.com.bo address=8.8.8.8 comment="auto-neverblock"
-
-# MENSAJERÍA LABORAL
-/ip dns static add name=web.whatsapp.com address=8.8.8.8 comment="auto-neverblock"
-/ip dns static add name=whatsapp.com address=8.8.8.8 comment="auto-neverblock"
-
-# VIDEOCONFERENCIAS
-/ip dns static add name=zoom.us address=8.8.8.8 comment="auto-neverblock"
-/ip dns static add name=anydesk.com address=8.8.8.8 comment="auto-neverblock"
+/ip dns static add name=google.com address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=www.google.com address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=accounts.google.com address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=outlook.office365.com address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=preforte.com.bo address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=www.preforte.com.bo address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=web.whatsapp.com address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=zoom.us address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=www.zoom.us address=8.8.8.8 comment=auto-neverblock
