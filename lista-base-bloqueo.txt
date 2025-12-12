@@ -1,57 +1,16 @@
-# ==============================================
-# LISTA BASE DE BLOQUEO - PREFORTE IRPAVI
-# Formato: Comandos MikroTik COMPLETOS
-# ==============================================
-
-# REDES SOCIALES
-/ip dns static add name=facebook.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=messenger.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=instagram.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=tiktok.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=twitter.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=snapchat.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=telegram.org address=127.0.0.1 comment="auto-base"
-/ip dns static add name=telegram.me address=127.0.0.1 comment="auto-base"
-/ip dns static add name=vk.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=discord.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=twitch.tv address=127.0.0.1 comment="auto-base"
-/ip dns static add name=pinterest.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=reddit.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=linkedin.com address=127.0.0.1 comment="auto-base"
-
-# STREAMING Y MÚSICA
-/ip dns static add name=youtube.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=netflix.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=primevideo.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=disneyplus.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=hbomax.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=dailymotion.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=vimeo.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=spotify.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=soundcloud.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=deezer.com address=127.0.0.1 comment="auto-base"
-
-# JUEGOS
-/ip dns static add name=ff.garena.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=pubgmobile.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=roblox.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=king.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=mobilelegends.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=supercell.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=minecraft.net address=127.0.0.1 comment="auto-base"
-/ip dns static add name=outfit7.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=playkickthebuddy.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=pokemongo.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=nianticlabs.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=genshin.hoyoverse.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=epicgames.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=riotgames.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=stumbleguys.com address=127.0.0.1 comment="auto-base"
-
-# CDNs
-/ip dns static add name=fbcdn.net address=127.0.0.1 comment="auto-base"
-/ip dns static add name=cdninstagram.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=tiktokcdn.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=googlevideo.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=discordapp.com address=127.0.0.1 comment="auto-base"
-/ip dns static add name=cdn.discordapp.com address=127.0.0.1 comment="auto-base"
+/ip dns static add name=facebook.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.facebook.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=instagram.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.instagram.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.tiktok.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=youtube.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.youtube.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=netflix.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.netflix.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=discord.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.discord.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=roblox.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.roblox.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=minecraft.net address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.minecraft.net address=127.0.0.1 comment=auto-base
