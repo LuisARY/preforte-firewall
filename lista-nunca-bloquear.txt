@@ -7,3 +7,12 @@
 /ip dns static add name=web.whatsapp.com address=8.8.8.8 comment=auto-neverblock
 /ip dns static add name=zoom.us address=8.8.8.8 comment=auto-neverblock
 /ip dns static add name=www.zoom.us address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=whatsapp.com address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=www.whatsapp.com address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=connect.facebook.net address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=static.whatsapp.net address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=mmg.whatsapp.net address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=mms.whatsapp.net address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=crashlogs.whatsapp.net address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=pps.whatsapp.net address=8.8.8.8 comment=auto-neverblock
+/ip dns static add name=web.whatsapp.com.edgekey.net address=8.8.8.8 comment=auto-neverblock
