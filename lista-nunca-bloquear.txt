@@ -1,18 +1,76 @@
-/ip dns static add name=google.com address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=www.google.com address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=accounts.google.com address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=outlook.office365.com address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=preforte.com.bo address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=www.preforte.com.bo address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=web.whatsapp.com address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=zoom.us address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=www.zoom.us address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=whatsapp.com address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=www.whatsapp.com address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=connect.facebook.net address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=static.whatsapp.net address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=mmg.whatsapp.net address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=mms.whatsapp.net address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=crashlogs.whatsapp.net address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=pps.whatsapp.net address=1.1.1.1 comment=auto-neverblock
-/ip dns static add name=web.whatsapp.com.edgekey.net address=1.1.1.1 comment=auto-neverblock
+# Oficina y Productividad
+/ip dns static add name=google.com comment=auto-neverblock
+/ip dns static add name=www.google.com comment=auto-neverblock
+/ip dns static add name=accounts.google.com comment=auto-neverblock
+/ip dns static add name=drive.google.com comment=auto-neverblock
+/ip dns static add name=docs.google.com comment=auto-neverblock
+/ip dns static add name=meet.google.com comment=auto-neverblock
+/ip dns static add name=mail.google.com comment=auto-neverblock
+/ip dns static add name=maps.google.com comment=auto-neverblock
+/ip dns static add name=outlook.office365.com comment=auto-neverblock
+/ip dns static add name=login.microsoftonline.com comment=auto-neverblock
+/ip dns static add name=teams.microsoft.com comment=auto-neverblock
+/ip dns static add name=sharepoint.com comment=auto-neverblock
+/ip dns static add name=onedrive.live.com comment=auto-neverblock
+/ip dns static add name=slack.com comment=auto-neverblock
+/ip dns static add name=zoom.us comment=auto-neverblock
+/ip dns static add name=www.zoom.us comment=auto-neverblock
+/ip dns static add name=webex.com comment=auto-neverblock
+/ip dns static add name=notion.so comment=auto-neverblock
+/ip dns static add name=trello.com comment=auto-neverblock
+/ip dns static add name=asana.com comment=auto-neverblock
+/ip dns static add name=github.com comment=auto-neverblock
+/ip dns static add name=dropbox.com comment=auto-neverblock
+
+# WhatsApp Web COMPLETO
+/ip dns static add name=web.whatsapp.com comment=auto-neverblock
+/ip dns static add name=whatsapp.com comment=auto-neverblock
+/ip dns static add name=www.whatsapp.com comment=auto-neverblock
+/ip dns static add name=connect.facebook.net comment=auto-neverblock
+/ip dns static add name=static.whatsapp.net comment=auto-neverblock
+/ip dns static add name=mmg.whatsapp.net comment=auto-neverblock
+/ip dns static add name=mms.whatsapp.net comment=auto-neverblock
+
+# Bancos de Bolivia (principales)
+/ip dns static add name=bnb.com.bo comment=auto-neverblock
+/ip dns static add name=bcp.com.bo comment=auto-neverblock
+/ip dns static add name=bancobisa.com comment=auto-neverblock
+/ip dns static add name=bmc.com.bo comment=auto-neverblock
+/ip dns static add name=banconacion.com.ar comment=auto-neverblock
+/ip dns static add name=bancoeconomico.com.bo comment=auto-neverblock
+/ip dns static add name=bancoganadero.com comment=auto-neverblock
+/ip dns static add name=bancofortaleza.com.bo comment=auto-neverblock
+/ip dns static add name=bancofie.com.bo comment=auto-neverblock
+/ip dns static add name=bancosol.com.bo comment=auto-neverblock
+/ip dns static add name=prodem.com.bo comment=auto-neverblock
+
+# Sitios Especiales
+/ip dns static add name=rastreo.monnet.com.bo comment=auto-neverblock
+/ip dns static add name=appsheet.com comment=auto-neverblock
+/ip dns static add name=anydesk.com comment=auto-neverblock
+/ip dns static add name=app.loop4.io comment=auto-neverblock
+/ip dns static add name=speedtest.net comment=auto-neverblock
+/ip dns static add name=checkpoint.com comment=auto-neverblock
+
+# Sitios del Estado Boliviano
+/ip dns static add name=economiayfinanzas.gob.bo comment=auto-neverblock
+/ip dns static add name=trabajo.gob.bo comment=auto-neverblock
+/ip dns static add name=desarrolloproductivo.gob.bo comment=auto-neverblock
+/ip dns static add name=planificacion.gob.bo comment=auto-neverblock
+/ip dns static add name=ministeriodegobierno.gob.bo comment=auto-neverblock
+/ip dns static add name=justicia.gob.bo comment=auto-neverblock
+/ip dns static add name=salud.gob.bo comment=auto-neverblock
+/ip dns static add name=educacion.gob.bo comment=auto-neverblock
+/ip dns static add name=energias.gob.bo comment=auto-neverblock
+/ip dns static add name=hidrocarburos.gob.bo comment=auto-neverblock
+/ip dns static add name=medioambiente.gob.bo comment=auto-neverblock
+/ip dns static add name=obraspublicas.gob.bo comment=auto-neverblock
+/ip dns static add name=impuestos.gob.bo comment=auto-neverblock
+/ip dns static add name=aduana.gob.bo comment=auto-neverblock
+/ip dns static add name=asfi.gob.bo comment=auto-neverblock
+/ip dns static add name=bcb.gob.bo comment=auto-neverblock
+/ip dns static add name=uif.gob.bo comment=auto-neverblock
+
+# Tu empresa
+/ip dns static add name=preforte.com.bo comment=auto-neverblock
+/ip dns static add name=www.preforte.com.bo comment=auto-neverblock
