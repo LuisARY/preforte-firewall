@@ -27,6 +27,10 @@
 /ip dns static add name=vimeo.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=crunchyroll.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=spotify.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.spotify.com address=127.0.0.1 comment=auto-base 
+/ip dns static add name=open.spotify.com address=127.0.0.1 comment=auto-base 
+/ip dns static add name=play.spotify.com address=127.0.0.1 comment=auto-base 
+/ip dns static add name=accounts.spotify.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=music.apple.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=soundcloud.com address=127.0.0.1 comment=auto-base
 
