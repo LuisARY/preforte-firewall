@@ -1,14 +1,43 @@
+# Redes Sociales
+/ip dns static add name=facebook.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.facebook.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=fb.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=instagram.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=www.instagram.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=twitter.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=x.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=tiktok.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=www.tiktok.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=snapchat.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=reddit.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=pinterest.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=youtube.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=www.youtube.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tinder.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=bumble.com address=127.0.0.1 comment=auto-base
+
+# Streaming
 /ip dns static add name=netflix.com address=127.0.0.1 comment=auto-base
-/ip dns static add name=www.netflix.com address=127.0.0.1 comment=auto-base
-/ip dns static add name=discord.com address=127.0.0.1 comment=auto-base
-/ip dns static add name=www.discord.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=primevideo.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=disneyplus.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=hbo.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=hulu.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=twitch.tv address=127.0.0.1 comment=auto-base
+/ip dns static add name=dailymotion.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=vimeo.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=crunchyroll.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=spotify.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=music.apple.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=soundcloud.com address=127.0.0.1 comment=auto-base
+
+# Juegos
+/ip dns static add name=steampowered.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=steamcommunity.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=epicgames.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=playstation.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=xbox.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=roblox.com address=127.0.0.1 comment=auto-base
-/ip dns static add name=www.roblox.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=fortnite.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=leagueoflegends.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=minecraft.net address=127.0.0.1 comment=auto-base
-/ip dns static add name=www.minecraft.net address=127.0.0.1 comment=auto-base
+/ip dns static add name=battle.net address=127.0.0.1 comment=auto-base
