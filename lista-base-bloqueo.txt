@@ -1,4 +1,4 @@
-# Redes Sociales
+# REDES SOCIALES
 /ip dns static add name=facebook.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=www.facebook.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=fb.com address=127.0.0.1 comment=auto-base
@@ -11,13 +11,12 @@
 /ip dns static add name=snapchat.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=reddit.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=pinterest.com address=127.0.0.1 comment=auto-base
-/ip dns static add name=youtube.com address=127.0.0.1 comment=auto-base
-/ip dns static add name=www.youtube.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=tinder.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=bumble.com address=127.0.0.1 comment=auto-base
 
-# Streaming
+# STREAMING DE VIDEO
 /ip dns static add name=netflix.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.netflix.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=primevideo.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=disneyplus.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=hbo.com address=127.0.0.1 comment=auto-base
@@ -26,22 +25,51 @@
 /ip dns static add name=dailymotion.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=vimeo.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=crunchyroll.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=youtube.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.youtube.com address=127.0.0.1 comment=auto-base
+
+# MÚSICA Y AUDIO
 /ip dns static add name=spotify.com address=127.0.0.1 comment=auto-base
-/ip dns static add name=www.spotify.com address=127.0.0.1 comment=auto-base 
-/ip dns static add name=open.spotify.com address=127.0.0.1 comment=auto-base 
-/ip dns static add name=play.spotify.com address=127.0.0.1 comment=auto-base 
-/ip dns static add name=accounts.spotify.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=open.spotify.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=music.youtube.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=music.apple.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=soundcloud.com address=127.0.0.1 comment=auto-base
 
-# Juegos
+# JUEGOS DE PC/CONSOLA
 /ip dns static add name=steampowered.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=steamcommunity.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=store.steampowered.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=epicgames.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=epicgames.store address=127.0.0.1 comment=auto-base
 /ip dns static add name=playstation.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=sonyentertainmentnetwork.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=xbox.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=xboxlive.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=roblox.com address=127.0.0.1 comment=auto-base
-/ip dns static add name=fortnite.com address=127.0.0.1 comment=auto-base
-/ip dns static add name=leagueoflegends.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.roblox.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=minecraft.net address=127.0.0.1 comment=auto-base
+/ip dns static add name=www.minecraft.net address=127.0.0.1 comment=auto-base
 /ip dns static add name=battle.net address=127.0.0.1 comment=auto-base
+/ip dns static add name=blizzard.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=leagueoflegends.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=riotgames.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=discord.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=discordapp.com address=127.0.0.1 comment=auto-base
+
+# JUEGOS MÓVILES
+/ip dns static add name=supercell.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=clashroyale.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=clashofclans.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=brawlstars.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=sc-id.net address=127.0.0.1 comment=auto-base
+/ip dns static add name=mobilelegends.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=mlbb.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=moonton.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=pubgmobile.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=freefire.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=callofdutymobile.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=wildrift.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=pokemongo.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=genshin.hoyoverse.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=hoyolab.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=fortnite.com address=127.0.0.1 comment=auto-base
