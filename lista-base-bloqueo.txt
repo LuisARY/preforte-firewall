@@ -13,6 +13,7 @@
 /ip dns static add name=pinterest.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=tinder.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=bumble.com address=127.0.0.1 comment=auto-base
+
 /ip dns static add name=tiktok-akamai1.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=tiktok-cdn.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=tiktok-akamai2.com address=127.0.0.1 comment=auto-base
@@ -26,6 +27,7 @@
 /ip dns static add name=tiktok-regional-torch.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=tiktok-gcp-supercell.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=tiktok-aws-range.com address=127.0.0.1 comment=auto-base
+
 /ip dns static add name=tiktok-akamai-71.18.222.1 address=127.0.0.1 comment=auto-base
 /ip dns static add name=tiktok-regional-186.16.19.8 address=127.0.0.1 comment=auto-base
 /ip dns static add name=tiktok-gcp-34.149.173.23 address=127.0.0.1 comment=auto-base
@@ -38,6 +40,16 @@
 /ip dns static add name=tiktok-asn-103.136.220.0-23 address=127.0.0.1 comment=auto-base
 /ip dns static add name=tiktok-akamai-71.18.253.0-24 address=127.0.0.1 comment=auto-base
 /ip dns static add name=tiktok-akamai-71.18.247.0-24 address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-akamai-23.196.15.65 address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-akamai-23.196.15.97 address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-msg-57.144.207.33 address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-fastly-151.101.250.73 address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-regional-186.16.19.34 address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-regional-186.16.19.43 address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-gcp-43.152.0.246 address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-gcp-43.152.17.203 address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-akamai-95.101.24.209 address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-edge-156.225.115.10 address=127.0.0.1 comment=auto-base
 
 # STREAMING DE VIDEO
 /ip dns static add name=netflix.com address=127.0.0.1 comment=auto-base
