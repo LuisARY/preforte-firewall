@@ -1,4 +1,4 @@
-# Oficina y Productividad
+# Oficina y Productividad - Google Workspace
 /ip dns static add name=google.com comment=auto-neverblock
 /ip dns static add name=www.google.com comment=auto-neverblock
 /ip dns static add name=accounts.google.com comment=auto-neverblock
@@ -6,12 +6,19 @@
 /ip dns static add name=docs.google.com comment=auto-neverblock
 /ip dns static add name=meet.google.com comment=auto-neverblock
 /ip dns static add name=mail.google.com comment=auto-neverblock
+/ip dns static add name=gmail.com comment=auto-neverblock
 /ip dns static add name=maps.google.com comment=auto-neverblock
+
+# Oficina y Productividad - Microsoft 365
+/ip dns static add name=outlook.com comment=auto-neverblock
 /ip dns static add name=outlook.office365.com comment=auto-neverblock
+/ip dns static add name=office.com comment=auto-neverblock
 /ip dns static add name=login.microsoftonline.com comment=auto-neverblock
 /ip dns static add name=teams.microsoft.com comment=auto-neverblock
 /ip dns static add name=sharepoint.com comment=auto-neverblock
 /ip dns static add name=onedrive.live.com comment=auto-neverblock
+
+# Oficina y Productividad - Otros
 /ip dns static add name=slack.com comment=auto-neverblock
 /ip dns static add name=zoom.us comment=auto-neverblock
 /ip dns static add name=www.zoom.us comment=auto-neverblock
@@ -31,12 +38,12 @@
 /ip dns static add name=mmg.whatsapp.net comment=auto-neverblock
 /ip dns static add name=mms.whatsapp.net comment=auto-neverblock
 
-# Bancos de Bolivia (principales)
+# Bancos de Bolivia
 /ip dns static add name=bnb.com.bo comment=auto-neverblock
 /ip dns static add name=bcp.com.bo comment=auto-neverblock
 /ip dns static add name=bancobisa.com comment=auto-neverblock
 /ip dns static add name=bmc.com.bo comment=auto-neverblock
-/ip dns static add name=banconacion.com.ar comment=auto-neverblock
+/ip dns static add name=bancounion.com.bo comment=auto-neverblock
 /ip dns static add name=bancoeconomico.com.bo comment=auto-neverblock
 /ip dns static add name=bancoganadero.com comment=auto-neverblock
 /ip dns static add name=bancofortaleza.com.bo comment=auto-neverblock
