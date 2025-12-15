@@ -26,6 +26,9 @@
 /ip dns static add name=tiktok-regional-torch.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=tiktok-gcp-supercell.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=tiktok-aws-range.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-akamai-71.18.222.1 address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-regional-186.16.19.8 address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-gcp-34.149.173.23 address=127.0.0.1 comment=auto-base
 
 # STREAMING DE VIDEO
 /ip dns static add name=netflix.com address=127.0.0.1 comment=auto-base
