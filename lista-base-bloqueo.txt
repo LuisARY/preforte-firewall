@@ -13,6 +13,19 @@
 /ip dns static add name=pinterest.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=tinder.com address=127.0.0.1 comment=auto-base
 /ip dns static add name=bumble.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-akamai1.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-cdn.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-akamai2.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-range1.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-range2.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-range3.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-akamai-torch.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-gcp-torch1.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-gcp-torch2.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-fastly-torch.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-regional-torch.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-gcp-supercell.com address=127.0.0.1 comment=auto-base
+/ip dns static add name=tiktok-aws-range.com address=127.0.0.1 comment=auto-base
 
 # STREAMING DE VIDEO
 /ip dns static add name=netflix.com address=127.0.0.1 comment=auto-base
