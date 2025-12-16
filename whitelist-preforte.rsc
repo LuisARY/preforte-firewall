@@ -1,53 +1,70 @@
-# whitelist-preforte.rsc
-# Formato óptimo para RouterOS - Sin límite de tamaño
-
 /ip firewall address-list
-# Limpiar lista completa
 remove [find where list="WHITELIST-PREFORTE"]
 
-# ========== DOMINIOS ESENCIALES (SIEMPRE) ==========
+# ESENCIALES
 add list=WHITELIST-PREFORTE address=8.8.8.8 comment="DNS Google"
 add list=WHITELIST-PREFORTE address=1.1.1.1 comment="DNS Cloudflare"
-add list=WHITELIST-PREFORTE address=raw.githubusercontent.com comment="GitHub Updates"
-add list=WHITELIST-PREFORTE address=update.mikrotik.com comment="MikroTik Updates"
+add list=WHITELIST-PREFORTE address=raw.githubusercontent.com comment="GitHub"
+add list=WHITELIST-PREFORTE address=update.mikrotik.com comment="MikroTik"
 add list=WHITELIST-PREFORTE address=time.google.com comment="NTP"
 
-# ========== TU LISTA DE SITIOS PERMITIDOS ==========
-# Oficina
-add list=WHITELIST-PREFORTE address=outlook.office.com comment="Outlook"
-add list=WHITELIST-PREFORTE address=*.office.com comment="Microsoft Office"
-add list=WHITELIST-PREFORTE address=teams.microsoft.com comment="Teams"
-add list=WHITELIST-PREFORTE address=*.sharepoint.com comment="SharePoint"
-add list=WHITELIST-PREFORTE address=*.microsoftonline.com comment="Microsoft Online"
-
-# Google Workspace
-add list=WHITELIST-PREFORTE address=mail.google.com comment="Gmail"
+# OFICINA
+add list=WHITELIST-PREFORTE address=outlook.office.com comment="Microsoft Outlook"
+add list=WHITELIST-PREFORTE address=teams.microsoft.com comment="Microsoft Teams"
+add list=WHITELIST-PREFORTE address=sharepoint.com comment="Microsoft SharePoint"
+add list=WHITELIST-PREFORTE address=onedrive.live.com comment="Microsoft OneDrive"
+add list=WHITELIST-PREFORTE address=gmail.com comment="Gmail"
 add list=WHITELIST-PREFORTE address=drive.google.com comment="Google Drive"
 add list=WHITELIST-PREFORTE address=docs.google.com comment="Google Docs"
 add list=WHITELIST-PREFORTE address=meet.google.com comment="Google Meet"
-add list=WHITELIST-PREFORTE address=*.googleapis.com comment="Google APIs"
-
-# WhatsApp
+add list=WHITELIST-PREFORTE address=slack.com comment="Slack"
+add list=WHITELIST-PREFORTE address=zoom.us comment="Zoom"
+add list=WHITELIST-PREFORTE address=webex.com comment="Webex"
+add list=WHITELIST-PREFORTE address=notion.so comment="Notion"
+add list=WHITELIST-PREFORTE address=trello.com comment="Trello"
+add list=WHITELIST-PREFORTE address=asana.com comment="Asana"
+add list=WHITELIST-PREFORTE address=github.com comment="GitHub"
+add list=WHITELIST-PREFORTE address=dropbox.com comment="Dropbox"
 add list=WHITELIST-PREFORTE address=web.whatsapp.com comment="WhatsApp Web"
 add list=WHITELIST-PREFORTE address=*.whatsapp.net comment="WhatsApp CDN"
+add list=WHITELIST-PREFORTE address=maps.google.com comment="Google Maps"
 
-# Bancos Bolivia
-add list=WHITELIST-PREFORTE address=*.bnb.com.bo comment="BNB Bolivia"
-add list=WHITELIST-PREFORTE address=*.bcp.com.bo comment="BCP Bolivia"
-add list=WHITELIST-PREFORTE address=*.bisa.com comment="BISA Bolivia"
+# BANCOS
+add list=WHITELIST-PREFORTE address=bnb.com.bo comment="Banco Nacional de Bolivia"
+add list=WHITELIST-PREFORTE address=bcp.com.bo comment="Banco de Crédito BCP"
+add list=WHITELIST-PREFORTE address=bisa.com.bo comment="Banco BISA"
+add list=WHITELIST-PREFORTE address=mercantilsantacruz.com comment="Banco Mercantil Santa Cruz"
+add list=WHITELIST-PREFORTE address=bancounion.com.bo comment="Banco Unión"
+add list=WHITELIST-PREFORTE address=banco-economico.com.bo comment="Banco Económico"
+add list=WHITELIST-PREFORTE address=banconacionalganadero.com comment="Banco Ganadero"
+add list=WHITELIST-PREFORTE address=fortaleza.com.bo comment="Banco Fortaleza"
+add list=WHITELIST-PREFORTE address=fie.com.bo comment="Banco FIE"
+add list=WHITELIST-PREFORTE address=bancosol.com.bo comment="Banco Solidario (BancoSol)"
+add list=WHITELIST-PREFORTE address=prodem.com.bo comment="Banco Prodem"
 
-# Gobierno Bolivia (.gob.bo)
-add list=WHITELIST-PREFORTE address=*.gob.bo comment="Gobierno Bolivia"
+# ESTADO
+add list=WHITELIST-PREFORTE address=mefp.gob.bo comment="Ministerio de Economía y Finanzas Públicas"
+add list=WHITELIST-PREFORTE address=trabajo.gob.bo comment="Ministerio de Trabajo"
+add list=WHITELIST-PREFORTE address=produccion.gob.bo comment="Ministerio de Desarrollo Productivo"
+add list=WHITELIST-PREFORTE address=planificacion.gob.bo comment="Ministerio de Planificación"
+add list=WHITELIST-PREFORTE address=gobierno.gob.bo comment="Ministerio de Gobierno"
+add list=WHITELIST-PREFORTE address=justicia.gob.bo comment="Ministerio de Justicia"
+add list=WHITELIST-PREFORTE address=salud.gob.bo comment="Ministerio de Salud"
+add list=WHITELIST-PREFORTE address=educacion.gob.bo comment="Ministerio de Educación"
+add list=WHITELIST-PREFORTE address=energias.gob.bo comment="Ministerio de Energías"
+add list=WHITELIST-PREFORTE address=hidrocarburos.gob.bo comment="Ministerio de Hidrocarburos"
+add list=WHITELIST-PREFORTE address=mma.gob.bo comment="Ministerio de Medio Ambiente y Agua"
+add list=WHITELIST-PREFORTE address=obraspublicas.gob.bo comment="Ministerio de Obras Públicas"
+add list=WHITELIST-PREFORTE address=impuestos.gob.bo comment="Servicio de Impuestos Nacionales (SIN)"
+add list=WHITELIST-PREFORTE address=aduana.gob.bo comment="Aduana Nacional"
+add list=WHITELIST-PREFORTE address=asfi.gob.bo comment="ASFI"
+add list=WHITELIST-PREFORTE address=bcb.gob.bo comment="Banco Central de Bolivia"
+add list=WHITELIST-PREFORTE address=uif.gob.bo comment="Unidad de Investigaciones Financieras"
 
-# Especiales
-add list=WHITELIST-PREFORTE address=rastreo.monnet.com.bo comment="Monnet"
+# ESPECIALES
+add list=WHITELIST-PREFORTE address=rastreo.monnet.com.bo comment="Monnet Rastreo"
 add list=WHITELIST-PREFORTE address=appsheet.com comment="AppSheet"
-add list=WHITELIST-PREFORTE address=*.anydesk.com comment="AnyDesk"
+add list=WHITELIST-PREFORTE address=anydesk.com comment="AnyDesk"
 add list=WHITELIST-PREFORTE address=app.loop4.io comment="Loop4"
-add list=WHITELIST-PREFORTE address=*.speedtest.net comment="Speedtest"
-
-# CDNs necesarios
-add list=WHITELIST-PREFORTE address=*.cloudflare.com comment="Cloudflare CDN"
-add list=WHITELIST-PREFORTE address=*.akamai.net comment="Akamai CDN"
-
-# Agrega aquí todos tus dominios...
+add list=WHITELIST-PREFORTE address=speedtest.net comment="Speedtest"
+add list=WHITELIST-PREFORTE address=checkpoint.com comment="Checkpoint VPN"
