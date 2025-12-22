@@ -8,6 +8,18 @@ add address=time.google.com list=whitelist
 add address=pool.ntp.org list=whitelist
 add address=ocsp.digicert.com list=whitelist
 add address=ocsp.sectigo.com list=whitelist
+add address=web.whatsapp.com list=whitelist
+add address=whatsapp.com list=whitelist
+add address=www.whatsapp.com list=whitelist
+add address=connect.facebook.net list=whitelist
+add address=whatsapp.net list=whitelist
+add address=fbcdn.net list=whitelist
+add address=gateway.whatsapp.net list=whitelist
+add address=w1.web.whatsapp.com list=whitelist
+add address=w2.web.whatsapp.com list=whitelist
+add address=w3.web.whatsapp.com list=whitelist
+add address=w4.web.whatsapp.com list=whitelist
+add address=w5.web.whatsapp.com list=whitelist
 
 # B. MICROSOFT 365 (COMPLETO)
 add address=login.microsoftonline.com list=whitelist
@@ -54,6 +66,7 @@ add address=140.82.117.0/24 list=whitelist
 add address=140.82.118.0/24 list=whitelist
 add address=140.82.119.0/24 list=whitelist
 
+
 # E. ALMACENAMIENTO
 add address=onedrive.live.com list=whitelist
 add address=dropbox.com list=whitelist
@@ -72,5 +85,4 @@ add address=anydesk.com list=whitelist
 add address=appsheet.com list=whitelist
 add address=speedtest.net list=whitelist
 add address=monnet.com.bo list=whitelist
-
 # ============================================
