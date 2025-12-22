@@ -42,6 +42,17 @@ add address=notion.so list=whitelist
 add address=trello.com list=whitelist
 add address=asana.com list=whitelist
 add address=github.com list=whitelist
+add address=140.82.112.0/20 list=whitelist 
+add address=192.30.252.0/22 list=whitelist 
+add address=185.199.108.0/22 list=whitelist 
+add address=140.82.112.0/24 list=whitelist
+add address=140.82.113.0/24 list=whitelist 
+add address=140.82.114.0/24 list=whitelist
+add address=140.82.115.0/24 list=whitelist 
+add address=140.82.116.0/24 list=whitelist 
+add address=140.82.117.0/24 list=whitelist 
+add address=140.82.118.0/24 list=whitelist
+add address=140.82.119.0/24 list=whitelist
 
 # E. ALMACENAMIENTO
 add address=onedrive.live.com list=whitelist
