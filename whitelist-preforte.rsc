@@ -324,3 +324,29 @@
 
 # Regla específica para Loop4 WebSockets (importante para login en tiempo real)
 /ip firewall filter add chain=forward action=accept dst-address-list=whitelist dst-port=443 protocol=tcp tls-host=*.loop4.io place-before=2
+
+# SPEEDTEST/OOKLA - DOMINIOS CRÍTICOS
+/ip firewall address-list add address=*.speedtest.net list=whitelist comment="Speedtest Wildcard"
+/ip firewall address-list add address=speedtest.net list=whitelist comment="Speedtest Main"
+/ip firewall address-list add address=www.speedtest.net list=whitelist comment="Speedtest WWW"
+/ip firewall address-list add address=c.speedtest.net list=whitelist comment="Speedtest Content"
+/ip firewall address-list add address=speedtest-*.com list=whitelist comment="Speedtest Servers"
+/ip firewall address-list add address=*.ooklaserver.net list=whitelist comment="Ookla Server Wildcard"
+/ip firewall address-list add address=*.ooklaserver.net list=whitelist comment="Ookla Servers Global"
+/ip firewall address-list add address=*.ookla.com list=whitelist comment="Ookla Wildcard"
+/ip firewall address-list add address=www.ookla.com list=whitelist comment="Ookla Main"
+/ip firewall address-list add address=api.ookla.com list=whitelist comment="Ookla API"
+/ip firewall address-list add address=test.ookla.com list=whitelist comment="Ookla Test"
+/ip firewall address-list add address=results.ookla.com list=whitelist comment="Ookla Results"
+/ip firewall address-list add address=*.speedtestcustom.com list=whitelist comment="Speedtest Custom"
+/ip firewall address-list add address=*.netgauge.net list=whitelist comment="Netgauge Servers"
+/ip firewall address-list add address=*.ookla-global.com list=whitelist comment="Ookla Global"
+/ip firewall address-list add address=*.st-addr.com list=whitelist comment="Speedtest Address"
+/ip firewall address-list add address=st-*.com list=whitelist comment="Speedtest Server Prefix"
+
+# CDNs y recursos
+/ip firewall address-list add address=*.cloudflare.com list=whitelist comment="Cloudflare CDN"
+/ip firewall address-list add address=*.akamai.net list=whitelist comment="Akamai CDN"
+/ip firewall address-list add address=*.akamaized.net list=whitelist comment="Akamai CDN"
+/ip firewall address-list add address=*.fastly.net list=whitelist comment="Fastly CDN"
+/ip firewall address-list add address=*.s3.amazonaws.com list=whitelist comment="AWS S3"
