@@ -185,8 +185,6 @@
 /ip firewall address-list add address=app.appsheet.com list=whitelist comment="AppSheet App"
 /ip firewall address-list add address=api.appsheet.com list=whitelist comment="AppSheet API"
 /ip firewall address-list add address=appsheetmaps.azureedge.net list=whitelist comment="AppSheet Maps"
-/ip firewall address-list add address=loop4.io list=whitelist comment="Loop4"
-/ip firewall address-list add address=app.loop4.io list=whitelist comment="Loop4 App"
 /ip firewall address-list add address=speedtest.net list=whitelist comment="Speedtest"
 /ip firewall address-list add address=ookla.com list=whitelist comment="Ookla Main"
 /ip firewall address-list add address=ooklaserver.net list=whitelist comment="Ookla Servers"
@@ -256,3 +254,73 @@
 /ip firewall address-list add address=turn1.web.whatsapp.com list=whitelist comment="TURN Server 1"
 /ip firewall address-list add address=ocsp.pki.goog list=whitelist comment="Google PKI OCSP"
 /ip firewall address-list add address=crl.pki.goog list=whitelist comment="Google PKI CRL"
+
+
+
+
+
+
+
+
+
+# ============================================
+# LOOP4 - DOMINIOS ADICIONALES PARA LOGIN Y FUNCIONAMIENTO
+# ============================================
+
+# Loop4 - Dominios principales de autenticación y API
+/ip firewall address-list add address=loop4.io list=whitelist comment="Loop4"
+/ip firewall address-list add address=app.loop4.io list=whitelist comment="Loop4 App"
+/ip firewall address-list add address=auth.loop4.io list=whitelist comment="Loop4 Authentication"
+/ip firewall address-list add address=api.loop4.io list=whitelist comment="Loop4 API Gateway"
+/ip firewall address-list add address=login.loop4.io list=whitelist comment="Loop4 Login Service"
+/ip firewall address-list add address=accounts.loop4.io list=whitelist comment="Loop4 Accounts"
+/ip firewall address-list add address=sso.loop4.io list=whitelist comment="Loop4 Single Sign-On"
+
+# Loop4 - Recursos estáticos y CDN
+/ip firewall address-list add address=cdn.loop4.io list=whitelist comment="Loop4 CDN"
+/ip firewall address-list add address=static.loop4.io list=whitelist comment="Loop4 Static Resources"
+/ip firewall address-list add address=assets.loop4.io list=whitelist comment="Loop4 Assets"
+/ip firewall address-list add address=media.loop4.io list=whitelist comment="Loop4 Media"
+
+# Loop4 - Subdominios de aplicación
+/ip firewall address-list add address=app.loop4.io list=whitelist comment="Loop4 Main App"
+/ip firewall address-list add address=portal.loop4.io list=whitelist comment="Loop4 Portal"
+/ip firewall address-list add address=admin.loop4.io list=whitelist comment="Loop4 Admin"
+/ip firewall address-list add address=dashboard.loop4.io list=whitelist comment="Loop4 Dashboard"
+
+# Loop4 - WebSockets y tiempo real
+/ip firewall address-list add address=ws.loop4.io list=whitelist comment="Loop4 WebSocket"
+/ip firewall address-list add address=wss.loop4.io list=whitelist comment="Loop4 Secure WebSocket"
+/ip firewall address-list add address=realtime.loop4.io list=whitelist comment="Loop4 Realtime Service"
+/ip firewall address-list add address=socket.loop4.io list=whitelist comment="Loop4 Socket.io"
+
+# Loop4 - Servicios de backend
+/ip firewall address-list add address=graphql.loop4.io list=whitelist comment="Loop4 GraphQL"
+/ip firewall address-list add address=rest.loop4.io list=whitelist comment="Loop4 REST API"
+/ip firewall address-list add address=storage.loop4.io list=whitelist comment="Loop4 Storage"
+/ip firewall address-list add address=uploads.loop4.io list=whitelist comment="Loop4 Uploads"
+
+# Loop4 - Monitoreo y logs
+/ip firewall address-list add address=logs.loop4.io list=whitelist comment="Loop4 Logs"
+/ip firewall address-list add address=metrics.loop4.io list=whitelist comment="Loop4 Metrics"
+/ip firewall address-list add address=status.loop4.io list=whitelist comment="Loop4 Status"
+/ip firewall address-list add address=health.loop4.io list=whitelist comment="Loop4 Health Check"
+
+# Loop4 - Servicios de terceros que podría usar
+/ip firewall address-list add address=auth0.com list=whitelist comment="Auth0 (posible proveedor de autenticación)"
+/ip firewall address-list add address=*.auth0.com list=whitelist comment="Auth0 Wildcard"
+/ip firewall address-list add address=okta.com list=whitelist comment="Okta (posible proveedor de identidad)"
+/ip firewall address-list add address=*.okta.com list=whitelist comment="Okta Wildcard"
+
+# Servicios AWS que Loop4 podría estar usando (comunes para SaaS)
+/ip firewall address-list add address=*.amazonaws.com list=whitelist comment="AWS Services"
+/ip firewall address-list add address=*.cloudfront.net list=whitelist comment="AWS CloudFront"
+/ip firewall address-list add address=*.s3.amazonaws.com list=whitelist comment="AWS S3"
+/ip firewall address-list add address=*.execute-api.*.amazonaws.com list=whitelist comment="AWS API Gateway"
+
+# Para diagnóstico, agrega reglas temporales de logging:
+/ip firewall filter add chain=forward action=log dst-address=app.loop4.io log-prefix="LOOP4-TRAFFIC" place-before=0
+/ip firewall filter add chain=forward action=log dst-address=auth.loop4.io log-prefix="LOOP4-AUTH" place-before=1
+
+# Regla específica para Loop4 WebSockets (importante para login en tiempo real)
+/ip firewall filter add chain=forward action=accept dst-address-list=whitelist dst-port=443 protocol=tcp tls-host=*.loop4.io place-before=2
