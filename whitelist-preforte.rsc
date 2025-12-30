@@ -255,14 +255,6 @@
 /ip firewall address-list add address=ocsp.pki.goog list=whitelist comment="Google PKI OCSP"
 /ip firewall address-list add address=crl.pki.goog list=whitelist comment="Google PKI CRL"
 
-
-
-
-
-
-
-
-
 # ============================================
 # LOOP4 - DOMINIOS ADICIONALES PARA LOGIN Y FUNCIONAMIENTO
 # ============================================
@@ -350,3 +342,65 @@
 /ip firewall address-list add address=*.akamaized.net list=whitelist comment="Akamai CDN"
 /ip firewall address-list add address=*.fastly.net list=whitelist comment="Fastly CDN"
 /ip firewall address-list add address=*.s3.amazonaws.com list=whitelist comment="AWS S3"
+
+# ============================================
+# DROPBOX - DOMINIOS PARA FUNCIONAMIENTO COMPLETO
+# ============================================
+
+# Dropbox - Dominios principales y críticos
+/ip firewall address-list add address=www.dropbox.com list=whitelist comment="Dropbox WWW"
+/ip firewall address-list add address=dl.dropbox.com list=whitelist comment="Dropbox Downloads"
+/ip firewall address-list add address=dl-web.dropbox.com list=whitelist comment="Dropbox Web Downloads"
+/ip firewall address-list add address=dl.dropboxusercontent.com list=whitelist comment="Dropbox User Content"
+
+# Dropbox - Servicios de aplicación
+/ip firewall address-list add address=client.dropbox.com list=whitelist comment="Dropbox Client"
+/ip firewall address-list add address=api.dropbox.com list=whitelist comment="Dropbox API"
+/ip firewall address-list add address=api.dropboxapi.com list=whitelist comment="Dropbox API 2"
+/ip firewall address-list add address=notify.dropbox.com list=whitelist comment="Dropbox Notifications"
+
+# Dropbox - Sincronización y cliente desktop
+/ip firewall address-list add address=*.dropbox.com list=whitelist comment="Dropbox All Subdomains"
+/ip firewall address-list add address=*.dropboxapi.com list=whitelist comment="Dropbox API Subdomains"
+/ip firewall address-list add address=*.dropboxusercontent.com list=whitelist comment="Dropbox Content Subdomains"
+
+# Dropbox - Servicios específicos
+/ip firewall address-list add address=paper.dropbox.com list=whitelist comment="Dropbox Paper"
+/ip firewall address-list add address=photos.dropbox.com list=whitelist comment="Dropbox Photos"
+/ip firewall address-list add address=transfer.dropbox.com list=whitelist comment="Dropbox Transfer"
+/ip firewall address-list add address=showcase.dropbox.com list=whitelist comment="Dropbox Showcase"
+/ip firewall address-list add address=help.dropbox.com list=whitelist comment="Dropbox Help"
+/ip firewall address-list add address=status.dropbox.com list=whitelist comment="Dropbox Status"
+/ip firewall address-list add address=block.dropbox.com list=whitelist comment="Dropbox Block"
+
+# Dropbox - Business y equipos
+/ip firewall address-list add address=business.dropbox.com list=whitelist comment="Dropbox Business"
+/ip firewall address-list add address=teams.dropbox.com list=whitelist comment="Dropbox Teams"
+/ip firewall address-list add address=admin.dropbox.com list=whitelist comment="Dropbox Admin"
+
+# Dropbox - CDNs y almacenamiento
+/ip firewall address-list add address=*.cf2.dropboxstatic.com list=whitelist comment="Dropbox Static CDN"
+/ip firewall address-list add address=*.dropboxstatic.com list=whitelist comment="Dropbox Static Resources"
+/ip firewall address-list add address=*.dropbox-dns.com list=whitelist comment="Dropbox DNS"
+/ip firewall address-list add address=*.dropboxforum.com list=whitelist comment="Dropbox Forum"
+
+# Dropbox - Autenticación y cuentas
+/ip firewall address-list add address=accounts.dropbox.com list=whitelist comment="Dropbox Accounts"
+/ip firewall address-list add address=secure.dropbox.com list=whitelist comment="Dropbox Secure"
+/ip firewall address-list add address=login.dropbox.com list=whitelist comment="Dropbox Login"
+/ip firewall address-list add address=signup.dropbox.com list=whitelist comment="Dropbox Signup"
+
+# Dropbox - Servicios móviles
+/ip firewall address-list add address=m.dropbox.com list=whitelist comment="Dropbox Mobile"
+/ip firewall address-list add address=app.dropbox.com list=whitelist comment="Dropbox App"
+/ip firewall address-list add address=mobile.dropbox.com list=whitelist comment="Dropbox Mobile Site"
+
+# Dropbox - WebSockets y sincronización en tiempo real
+/ip firewall address-list add address=ws.dropbox.com list=whitelist comment="Dropbox WebSocket"
+/ip firewall address-list add address=wss.dropbox.com list=whitelist comment="Dropbox Secure WebSocket"
+/ip firewall address-list add address=realtime.dropbox.com list=whitelist comment="Dropbox Realtime"
+
+# Dropbox - Servicios de terceros utilizados
+/ip firewall address-list add address=*.cloudfront.net list=whitelist comment="AWS CloudFront (Dropbox CDN)"
+/ip firewall address-list add address=*.amazonaws.com list=whitelist comment="AWS Services (Dropbox Storage)"
+/ip firewall address-list add address=*.s3.amazonaws.com list=whitelist comment="AWS S3 (Dropbox Backup)"
