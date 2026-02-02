@@ -194,6 +194,11 @@
 /ip firewall address-list add address=rastreo.monnet.com.bo list=whitelist comment="Rastreo Monnet"
 /ip firewall address-list add address=azureedge.net list=whitelist comment="Azure CDN Root"
 /ip firewall address-list add address=blob.core.windows.net list=whitelist comment="Azure Storage Root"
+/ip firewall address-list add address=www.monnet.com.bo list=whitelist comment="Monnet WWW"
+/ip firewall address-list add address=app.monnet.com.bo list=whitelist comment="Monnet App"
+/ip firewall address-list add address=api.monnet.com.bo list=whitelist comment="Monnet API"
+/ip firewall address-list add address=login.monnet.com.bo list=whitelist comment="Monnet Login"
+/ip firewall address-list add address=auth.monnet.com.bo list=whitelist comment="Monnet Auth"
 
 # K. INTELIGENCIA ARTIFICIAL
 /ip firewall address-list add address=chat.deepseek.com list=whitelist comment="DeepSeek Chat"
@@ -303,6 +308,18 @@
 /ip firewall address-list add address=*.auth0.com list=whitelist comment="Auth0 Wildcard"
 /ip firewall address-list add address=okta.com list=whitelist comment="Okta (posible proveedor de identidad)"
 /ip firewall address-list add address=*.okta.com list=whitelist comment="Okta Wildcard"
+
+# Loop4 v2
+/ip firewall address-list add address=appv2.loop4.io list=whitelist comment="Loop4 v2 App"
+/ip firewall address-list add address=login.loop4.io list=whitelist comment="Loop4 v2 Login"
+/ip firewall address-list add address=auth.loop4.io list=whitelist comment="Loop4 v2 Auth"
+/ip firewall address-list add address=api.loop4.io list=whitelist comment="Loop4 v2 API"
+/ip firewall address-list add address=assets.loop4.io list=whitelist comment="Loop4 v2 Assets"
+/ip firewall address-list add address=wss.loop4.io list=whitelist comment="Loop4 WebSocket Secure"
+/ip firewall address-list add address=ws.loop4.io list=whitelist comment="Loop4 WebSocket"
+/ip firewall address-list add address=static.loop4.io list=whitelist comment="Loop4 Static"
+/ip firewall address-list add address=cdn.loop4.io list=whitelist comment="Loop4 CDN"
+/ip firewall address-list add address=media.loop4.io list=whitelist comment="Loop4 Media"
 
 # Servicios AWS que Loop4 podría estar usando (comunes para SaaS)
 /ip firewall address-list add address=*.amazonaws.com list=whitelist comment="AWS Services"
